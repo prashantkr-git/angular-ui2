@@ -1,0 +1,374 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    margin-right: 5rem;
+    align-items: center;
+    z-index: 99;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 2.2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    z-index: 99;
+    background: transparent url(../assets/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 20rem;
+}
+
+.navbar a {
+    color: #444444;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.outer-primary-btn {
+    border-radius: 1.5rem;
+    border: 1px solid #663399;
+    color: #663399 !important;
+    font-size: 1rem !important;
+    padding: 0.29rem 2rem 0.4rem 2rem;
+    margin-left: 1rem;
+}
+
+.primary-btn {
+    border-radius: 2rem;
+    border: 1px solid #663399;
+    background: #663399 !important;
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 0.3rem 2rem 0.4rem 2rem;
+}
+
+.body-content {
+    display: flex;
+    height: 85vh;
+}
+
+.left-content {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.right-content {
+    width: 100%;
+    height: 45rem;
+    position: relative;
+}
+
+.blob-small {
+    background: transparent url(../assets/images/blob-small.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    transform: translate(-15%, 10%);
+}
+
+.left-content span {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 3rem;
+    height: 2rem;
+}
+
+.collect-img {
+    background: transparent url(../assets/images/collect_img-video.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40rem;
+    position: relative;
+    top: -40%;
+    left: 15%;
+}
+
+.left-content hr {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+    width: 25%;
+    border-width: 0.2rem;
+    border-color: #000;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+.accounting-dots {
+    background: transparent url(../assets/images/accounting-dots.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6rem;
+    width: 30rem;
+    position: relative;
+    top: -74%;
+    left: 45%;
+}
+
+.circle {
+    background: transparent url(../assets/images/circle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92%;
+    width: 100%;
+    position: relative;
+    top: -30%;
+    right: -7%;
+}
+
+.calc-container {
+    height: 40rem;
+    width: 28rem;
+    position: relative;
+    top: -85%;
+    left: 20%;
+    color: #000;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    background: #ffffff;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.calc-title h2 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    text-align: center;
+    padding: 0.6rem;
+    margin: 0;
+    background: #FCFCFF;
+    border-radius: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.calc-content {
+    padding: 2rem 3rem;
+}
+
+.calc-content .monthly-income h1,
+.calc-content .monthly-expense h1,
+.calc-content .repayment-tenure h1,
+.existing-loans h1,
+.existing-loan-emi h1 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: -0.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin-top: -1rem;
+}
+
+.monthly-income-limit {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0.5rem 0; */
+}
+
+.monthly-income-limit h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #aaa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.monthly-income h2,
+.monthly-expense h2 {
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.monthly-expense,
+.repayment-tenure,
+.existing-loans,
+.existing-loan-emi {
+    margin-top: 1rem;
+}
+
+.repayment-tenure h1,
+.existing-loan-emi h1 {
+    margin-bottom: 0.8rem !important;
+}
+
+.repayment-tenure select {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    background: transparent;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+}
+
+.existing-loans {
+    display: flex;
+    justify-content: space-between;
+}
+
+.existing-loan-emi .loan-amount {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    padding-left: 18px;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    background-image: url(../assets/images/rupee.png);
+    background-repeat: no-repeat;
+    background-size: 15px 18px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 10px;
+    right: -9px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #663399;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #663399;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.emi-amount-container {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    width: 15rem;
+    height: 25rem;
+    position: relative;
+    top: -70rem;
+    left: 70.2%;
+    background: #663399;
+    padding: 2rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.emi-amount-container .amount-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emi-amount-container h1 {
+    color: #FCFCFF;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.emi-amount-container h2 {
+    color: #FCFCFF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+    padding: 1.2rem;
+    text-decoration: none;
+    color: #663399;
+    background: #FCFCFF;
+    border-radius: 2rem;
+    width: 9rem;
+    text-align: center;
+    margin-top: 1rem;
+    box-shadow: 0px 1px 1px 0px #aaaaaa;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.right-content .accounting-dots {
+    background: transparent url(../assets/images/accounting-dots.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6rem;
+    width: 30rem;
+    position: relative;
+    top: -145%;
+    left: 45%;
+    z-index: 0;
+}
+
+mat-slider {
+    width: 100%;
+}
+
+.mat-slider-horizontal {
+    height: 30px;
+}

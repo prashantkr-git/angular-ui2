@@ -1,0 +1,101 @@
+<!-- navbar -->
+<nav class="navbar">
+    <div class="navbar-container container">
+        <div class="logo"></div>
+        <ul class="menu-items">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#" class="outer-primary-btn">Login</a></li>
+            <li><a href="#" class="primary-btn">Get Started</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="body-content">
+    <div class="left-content">
+        <div class="blob-small"></div>
+        <span>We make it Super <br>Simple</span>
+        <hr>
+        <div class="collect-img"></div>
+        <div class="accounting-dots"></div>
+    </div>
+    <div class="right-content">
+        <div class="circle"></div>
+        <!-- emi calculator div -->
+        <div class="calc-container">
+            <div class="calc-title">
+                <h2>Eligibility Calculator</h2>
+            </div>
+            <div class="calc-content">
+                <div class="monthly-income">
+                    <h1>Monthly Income</h1>
+                    <h2> &#8377; <span>{{monthlyIncome}}</span></h2>
+                    <div class="slidecontainer">
+                        <mat-slider min="150000" max="300000" step="10000" value="200000" (input)="monthIncome($event)"></mat-slider>
+                        <div class="monthly-income-limit">
+                            <h2> &#8377; 1,50,000</h2>
+                            <h2> &#8377; 3,00,000</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monthly-expense">
+                    <h1>Monthly Expense</h1>
+                    <h2> &#8377; <span>{{monthlyExpense}}</span></h2>
+                    <div class="slidecontainer">
+                        <mat-slider min="5000" max="50000" step="1000" value="20000" (input)="monthExpense($event)"></mat-slider>
+                    </div>
+                </div>
+
+                <div class="repayment-tenure">
+                    <h1>Repayment Tenure</h1>
+                    <div class="slidecontainer">
+                        <select name="repayment-tenure-select">
+                          <option value="6">6 Months</option>
+                          <option value="7">7 Months</option>
+                          <option value="8">8 Months</option>
+                          <option value="9">9 Months</option>
+                          <option value="10">10 Months</option>
+                          <option value="11">11 Months</option>
+                          <option value="12">12 Months</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="existing-loans">
+                    <h1>Do you have existing loans?</h1>
+                    <div class="loan-slide">
+                        <label class="switch">
+                          <input type="checkbox" checked>
+                          <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="existing-loan-emi">
+                    <h1>EMI of existing loan (optional)</h1>
+                    <input type="text" placeholder="15,000" name="loan-amount" id="loan-amount" class="loan-amount" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+                </div>
+            </div>
+        </div>
+
+        <!-- emi amount div -->
+        <div class="emi-amount-container">
+            <div class="amount-container">
+                <h1>Loan Amount</h1>
+                <h2>&#8377; <span>1,50,000</span></h2>
+            </div>
+
+            <div class="amount-container">
+                <h1>Your EMI will be</h1>
+                <h2>&#8377; <span>15,000</span></h2>
+            </div>
+
+            <a href="#" class="btn btn-primary">Get Money</a>
+        </div>
+
+        <!-- dotted div -->
+        <div class="accounting-dots"></div>
+    </div>
+</div>

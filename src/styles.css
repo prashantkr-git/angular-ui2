@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 75%;
+    /* 12px */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #FCFCFF;
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    font: normal;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.mat-slider-thumb {
+    background-color: #663399 !important;
+    border-color: #fff !important;
+    transform: none !important;
+}
+
+.mat-slider-track-background {
+    background: linear-gradient(to right, #eeeeee 0%, #eeeeee 50%, #eeeeee 50%, #eeeeee 100%);
+}
+
+.mat-slider-horizontal .mat-slider-track-wrapper {
+    height: 6px !important;
+}
+
+.mat-slider-horizontal .mat-slider-track-background,
+.mat-slider-horizontal .mat-slider-track-fill {
+    height: 7px !important;
+    border-radius: 10px !important;
+}
+
+.mat-slider-horizontal .mat-slider-thumb-container {
+    height: 2px !important;
+}
+
+.mat-accent .mat-slider-thumb,
+.mat-accent .mat-slider-thumb-label,
+.mat-accent .mat-slider-track-fill {
+    background-color: #663399;
+}
